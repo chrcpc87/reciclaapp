@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>Colores de bolsas y/o canecas</title>
+	<link rel="stylesheet" type="text/css" href="../css/styleF.css">
+	<script src="../js/fontawesome-all.js"></script>
+	<style type="text/css">
+		.gradient {
+		filter: none;
+		}
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Niramit');
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img class="img" src="../img/logo.png">
+			<img class="img1" src="../img/logo-barra.png">
+			<img class="img2" src="../img/logo-nombre.png">
+		</div>
+	</header>
+	<!-- Menu -->
+	<div class="menu-btn"><i class="fas fa-bars" onclick="menu()"></i></div>
+	<nav id="nav" class="esconder-menu">
+		<div class="div-menu">
+			<!--<h2>Menú</h2>-->
+			<ul>
+				<a href="a.html"><li class="a"></li>PORQUE ES IMPORTANTE RECICLAR?</a>
+				<a href="b.html"><li class="b"></li>LAS CUATRO "R"</a>
+				<a href="c.html"><li class="c"></li>MATERIALES RECICLABLES</a>
+				<a href="d.html"><li class="d"></li>MATERIALES NO RECICLABLES</a>
+				<a href="e.html"><li class="e"></li>COLORES DE CANECAS</a>
+				<a href="f.html"><li class="f"></li>RECIDUOS ELÉCTRICOS Y ELECTRÓNICOS</a>
+				<a href="g.html"><li class="g"></li>ECOPUNTOS</a>
+			</ul>
+		</div>
+	</nav>
+	<div class="content">
+		<div>
+			<h1>Residuos eléctricos y electrónicos</h1>
+		</div>
+		<div class="parraf">
+			<p>Otro de los grades problemas de contaminación, son los residuos eléctricos y electrónicos. Baterias, computadores, bombillos y electrodomésticos. <br>Afortunadamente, en la actualidad contamos con empresas o cooperativas que se encargan de dar un uso adecuado de estos residuos. En el caso de grandes electrodomésticos, la empresa <a href="https://www.redverde.co/" target="_blank"><span class="links">Red verde</span></a> los puede ayudar. Si tal vez tiene equipos de computo en desuso o dañados, organizaciones como <a href="https://www.ecocomputo.com/" target="_blank"><span class="links">EcoCómputo</span></a> seleccionaran las partes reparables para ayudar a la población vulnerable. <br>Otros residuos del mismo tipo, son las bombillas y las pilas. Para saber donde puede depositar estos residuos, puede visitar el sitio web de <a href="https://www.recypuntos.org/" target="_blank"><span class="links">Recypuntos</span>.</a></p>
+		</div>
+		<p class="p_cite">Fuente: <a href="https://sostenibilidad.semana.com/impacto/articulo/basura-electronica-que-hacer-con-los-desechos-peligrosos-como-bombillos/37887">Revista semana</a></p>
+		<div class="desechElec">
+			<div>
+				<h2>Algunos desechos de este tipo:</h2>
+			</div>
+			<ul>
+				<li>Computadores y perifericos</li>
+				<li>Electrodomésticos</li>
+				<li>Pilas y baterias</li>
+				<li>Cámaras fotográficas</li>
+				<li>Bombillas ahorradoras y fluorescentes</li>
+				<li>Televisores</li>
+				<li>Disopositivos móviles</li>
+			</ul>
+		</div>
+	</div>
+	<footer class="ft">
+		<div class="contactUs">
+			<span>Contáctenos: </span>
+		</div>
+		<div class="canales">
+			<div class="fb">
+				<span><a href="#"><i class="fab fa-facebook-square fa-3x"></i></a></span>
+			</div>
+			<div class="tw">
+				<span><a href="#"><i class="fab fa-twitter fa-3x"></i></a></span>
+			</div>
+		</div>
+		<div class="buzon">
+			<span class="span-buz">Buzón de sugerencias:</span>
+			<form action="../php/sug.php" method="post">
+				<div class="nom">
+					<label>Nombre:</label><br>
+					<input type="text" name="name"><br>
+				</div>
+				<div class="email">
+					<label>Correo electrónico:</label><br>
+					<input type="email" name="email"><br>
+				</div>
+				<div class="textarea">
+					<textarea placeholder="Escribe aquí tu sugerencia" name="textarea"></textarea>
+				</div>
+				<div class="enviar"  onmouseover="enviar()"  onmouseout="enviar_false()">
+					<!--<span class="content-logo"><i class="logo-send fas fa-envelope fa-3x"></i></span>-->
+					<input class="send" name="send" type="submit" value="Enviar">
+				</div>	
+			</form>
+			<div>
+				<!-- código descargue la app -->
+			</div>
+		</div>
+	</footer>
+	<script src="../js/menu.js"></script>
+	<script src="../js/enviarBtn.js"></script>
+</body>
+</html>

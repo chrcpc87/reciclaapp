@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>Bienvenidos</title>
+	<link rel="stylesheet" type="text/css" href="../css/styleIndex.css">
+	<script src="../js/fontawesome-all.js"></script>
+	<style type="text/css">
+		.gradient {
+		filter: none;
+		}
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Niramit');
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img class="img" src="../img/logo.png">
+			<img class="img1" src="../img/logo-barra.png">
+			<img class="img2" src="../img/logo-nombre.png">
+		</div>
+	</header>
+	<!-- Menu -->
+	<div class="menu-btn"><i class="fas fa-bars" onclick="menu()"></i></div>
+	<nav id="nav" class="esconder-menu">
+		<div class="div-menu">
+			<!--<h2>Menú</h2>-->
+			<ul>
+				<a href="a.html"><li class="a"></li>PORQUE ES IMPORTANTE RECICLAR?</a>
+				<a href="b.html"><li class="b"></li>LAS CUATRO "R"</a>
+				<a href="c.html"><li class="c"></li>MATERIALES RECICLABLES</a>
+				<a href="d.html"><li class="d"></li>MATERIALES NO RECICLABLES</a>
+				<a href="e.html"><li class="e"></li>COLORES DE CANECAS</a>
+				<a href="f.html"><li class="f"></li>RECIDUOS ELÉCTRICOS Y ELECTRÓNICOS</a>
+				<a href="g.html"><li class="g"></li>ECOPUNTOS</a>
+			</ul>
+		</div>
+	</nav>
+	<div class="content">
+		<div>
+			<h1>Bienvenidos!</h1>
+		</div>
+		<div>
+			<p>ReciclApp es una herramienta para dispositivos móviles andriod de descarga gratuita con la cual se logra informar y generar conciencia en los habitantes en cuanto al manejo de residuos o basuras.
+			Sabemos que gran parte de los residuos que generamos pueden tener una reutilización dándole mas vida útil a estos y reduciendo las cantidades de materiales que son depositados en lugares como el botadero "Doña Juana" o en nuestros recursos hídricos generando gigantezcos impactos negativos en el ecosistema y por ende un impacto de salud pública que afecta a nuestros seres queridos y a nosotros mismos.</p>
+		</div>
+	</div>
+	<footer class="ft">
+		<div class="contactUs">
+			<span>Contáctenos: </span>
+		</div>
+		<div class="canales">
+			<div class="fb">
+				<span><a href="#"><i class="fab fa-facebook-square fa-3x"></i></a></span>
+			</div>
+			<div class="tw">
+				<span><a href="#"><i class="fab fa-twitter fa-3x"></i></a></span>
+			</div>
+		</div>
+		<div class="buzon">
+			<span class="span-buz">Buzón de sugerencias:</span>
+			<!-- Envío de sugerencias -->
+			<form action="../php/sug.php" method="post">
+				<div class="nom">
+					<label>Nombre:</label><br>
+					<input type="text" name="name"><br>
+				</div>
+				<div class="email">
+					<label>Correo electrónico:</label><br>
+					<input type="email" name="email"><br>
+				</div>
+				<div class="textarea">
+					<textarea placeholder="Escribe aquí tu sugerencia" name="textarea"></textarea>
+				</div>
+				<div class="enviar"  onmouseover="enviar()"  onmouseout="enviar_false()">
+					<!--<span class="content-logo"><i class="logo-send fas fa-envelope fa-3x"></i></span>-->
+					<input class="send" name="send" type="submit" value="Enviar">
+				</div>	
+			</form>
+			<div>
+				<!-- código descargue la app -->
+			</div>
+		</div>
+	</footer>
+	<script src="../js/menu.js"></script>
+	<script src="../js/enviarBtn.js"></script>
+</body>
+</html>

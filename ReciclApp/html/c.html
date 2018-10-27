@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>Materiales reciclables</title>
+	<link rel="stylesheet" type="text/css" href="../css/styleC.css">
+	<script src="../js/fontawesome-all.js"></script>
+	<style type="text/css">
+		.gradient {
+		filter: none;
+		}
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Niramit');
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img class="img" src="../img/logo.png">
+			<img class="img1" src="../img/logo-barra.png">
+			<img class="img2" src="../img/logo-nombre.png">
+		</div>
+	</header>
+	<!-- Menu -->
+	<div class="menu-btn"><i class="fas fa-bars" onclick="menu()"></i></div>
+	<nav id="nav" class="esconder-menu">
+		<div class="div-menu">
+			<!--<h2>Menú</h2>-->
+			<ul>
+				<a href="a.html"><li class="a"></li>PORQUE ES IMPORTANTE RECICLAR?</a>
+				<a href="b.html"><li class="b"></li>LAS CUATRO "R"</a>
+				<a href="c.html"><li class="c"></li>MATERIALES RECICLABLES</a>
+				<a href="d.html"><li class="d"></li>MATERIALES NO RECICLABLES</a>
+				<a href="e.html"><li class="e"></li>COLORES DE CANECAS</a>
+				<a href="f.html"><li class="f"></li>RECIDUOS ELÉCTRICOS Y ELECTRÓNICOS</a>
+				<a href="g.html"><li class="g"></li>ECOPUNTOS</a>
+			</ul>
+		</div>
+	</nav>
+	<div class="content">
+		<div>
+			<h1>Reciclables</h1>
+		</div>
+		<div>
+			<ul class="papeles">Papeles: 
+				<li>Periódicos</li>
+				<li>Revistas</li>
+				<li>Hojas</li>
+				<li>Papeles(impresos o no)</li>
+				<li>Sobres comunes o de papel madera</li>
+				<li>Remitos, facturas, formularios, etc.</li>
+				<li>Cajas</li>
+				<li>Carpetas</li>
+				<li>Folletos</li>
+				<li>Guías telefónicas</li>
+				<li>Envases de cartón</li>
+			</ul>
+		</div>
+		<div  class="vidrios">
+			<ul>Vidrios: 
+				<li>Envases de alimentos</li>
+				<li>Bebidas</li>
+			</ul>
+		</div>	
+		<div class="textiles">
+			<ul>Textiles: 
+				<li>Algodón</li>
+				<li>Lino</li>
+			</ul>
+		</div>
+		<div class="metales">
+			<ul>Metales: 
+				<li>Latas y envases de aluminio</li>
+				<li>Metales ferrosos</li>
+			</ul>
+		</div>
+		<div class="plastico">
+			<ul>Plásticos: 
+				<li>Envases de comida y bebida.</li>
+				<li>Vasos y cubiertos descartables.</li>
+				<li>Masetas, sillas, mesas, etc.</li>
+				<li>CDs y DVDs.</li>
+			</ul>
+		</div>
+		<div class="basura-org">
+			<ul>Basura orgánica: 
+				<li>Comida natural que sobra.</li>
+				<li>Heces de nuestros animales.</li>
+				<li>Hojas, pasto y ramas.</li>
+			</ul>
+		</div>
+		<p class="p_cite">Fuente: <cite><a href="https://www.ecologiahoy.com/lista-de-materiales-reciclables-y-no-reciclables">ECOLOGIAHOY</a></cite></p>
+	</div>
+	<footer class="ft">
+		<div class="contactUs">
+			<span>Contáctenos: </span>
+		</div>
+		<div class="canales">
+			<div class="fb">
+				<span><a href="#"><i class="fab fa-facebook-square fa-3x"></i></a></span>
+			</div>
+			<div class="tw">
+				<span><a href="#"><i class="fab fa-twitter fa-3x"></i></a></span>
+			</div>
+		</div>
+		<div class="buzon">
+			<span class="span-buz">Buzón de sugerencias:</span>
+			<form action="../php/sug.php" method="post">
+				<div class="nom">
+					<label>Nombre:</label><br>
+					<input type="text" name="name"><br>
+				</div>
+				<div class="email">
+					<label>Correo electrónico:</label><br>
+					<input type="email" name="email"><br>
+				</div>
+				<div class="textarea">
+					<textarea placeholder="Escribe aquí tu sugerencia" name="textarea"></textarea>
+				</div>
+				<div class="enviar"  onmouseover="enviar()"  onmouseout="enviar_false()">
+					<!--<span class="content-logo"><i class="logo-send fas fa-envelope fa-3x"></i></span>-->
+					<input class="send" name="send" type="submit" value="Enviar">
+				</div>	
+			</form>
+			<div>
+				<!-- código descargue la app -->
+			</div>
+		</div>
+	</footer>
+	<script src="../js/menu.js"></script>
+	<script src="../js/enviarBtn.js"></script>
+</body>
+</html>
